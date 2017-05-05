@@ -1,0 +1,78 @@
+// Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+
+// Typography
+$base-font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Avenir Next",
+  "Avenir",
+  "Segoe UI",
+  "Lucida Grande",
+  "Helvetica Neue",
+  "Helvetica",
+  "Fira Sans",
+  "Roboto",
+  "Noto",
+  "Droid Sans",
+  "Cantarell",
+  "Oxygen",
+  "Ubuntu",
+  "Franklin Gothic Medium",
+  "Century Gothic",
+  "Liberation Sans",
+  sans-serif;
+$monospace-font-family:
+  "Anonymous Pro",
+  "Consolas",
+  "monaco",
+  monospace;
+
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 0.9375em;
+$small-font-size: 0.875em;
+
+// Line height
+$base-line-height: 2;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 2px;
+$base-z-index: 0;
+
+// Colors
+$gray: rgb(48,46,49);
+$yellow: rgb(254,220,87);
+$orange: rgb(210,109,17);
+$red: rgb(213,38,30);
+$smoke: whitesmoke;
+$white: #fffdf5;
+
+// Font Colors
+$base-font-color: $gray;
+$action-color: $orange;
+
+// Border
+$base-border-color: #ccc;
+$base-border: 1px solid $base-border-color;
+$secondary-border: 4px solid $yellow;
+
+// Background Colors
+$base-background-color: $white;
+$secondary-background-color: tint($base-border-color, 75%);
+
+//Code
+$code-background-color: rgba(#000, 0.06);
+$code-block-box-shadow: 0 0 0 3px #eee;
+$code-block-spacing: 10px;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba($gray, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

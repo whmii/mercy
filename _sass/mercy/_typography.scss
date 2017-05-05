@@ -1,0 +1,89 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  margin: 0 0 1.65rem;
+
+  a,
+  a:hover {
+    border-bottom: 0;
+  }
+
+  a:not(:hover) {
+    color: inherit;
+  }
+}
+
+h1 {
+  font-size: 3.65324em;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 3.25em;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: 2.8em;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 2.1em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+a {
+  border-bottom: 1px solid currentColor;
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-bottom: 2px solid currentColor;
+    color: shade($action-color, 10%);
+  }
+}
+
+hr {
+  border-bottom: $secondary-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.65em 0;
+}
+
+blockquote {
+  font-style: italic;
+  line-height: $heading-line-height;
+}

@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+  max-width: 88rem;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $base-font-color;
+  float: left;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0 0 0 1rem;
+  padding-top: 2rem;
+  width: calc(100% - 2rem);
+
+  @media only screen and (min-width: 600px) {
+    width: calc(83.33333% - 3.66667rem);
+    float: left;
+    margin-left: 2rem;
+    margin-left: calc(8.33333% - 2.16667rem + 4rem);
+  }
+
+  @media only screen and (min-width: 1100px) {
+    width: calc(50% - 3rem);
+    float: left;
+    margin-left: 2rem;
+    margin-left: calc(16.66667% - 2.33333rem + 4rem);
+  }
+}
+
+article {
+  margin-bottom: 4em;
+}
